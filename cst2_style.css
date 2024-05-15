@@ -1,0 +1,14 @@
+header{
+    background-image: linear-gradient( rgb(67, 158, 239), white);
+}
+#rot{
+    transform: rotate(25deg);
+    align-items: end;
+
+}
+#grad1{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 200px;
+    background-image: linear-gradient(white,rgb(68, 174, 203),white);
+}

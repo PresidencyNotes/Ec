@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cst2_style.css">
+    <title>Order Things</title>
+    
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+       
+<body>
+    <header class=" fixed-top bg-info text-light py-2">
+
+        <div class="container">
+            <h1 class="d-flex justify-content-center text-dark "> <u> Sports </u></h1>
+            <nav class="d-flex justify-content-center">
+                <ul class="nav">
+                    <li class="nav-item "><a class="nav-link" href="#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cart-items"> <img src="Cart.jpg" width="20px">
+                            Cart</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="Home"><br><br>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://contents.mediadecathlon.com/s1067896/k$0f2bea697d98dde3e215e88ae651d4f5/Frame%20427321693.png?format=auto&quality=70&f=1680x0"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://contents.mediadecathlon.com/s1067881/k$4832ff946f5b84d36575b7cdc08c3e0a/Frame%20427321675.png?format=auto&quality=70&f=1680x0"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://contents.mediadecathlon.com/s1067886/k$d33754b2871ceaa26ce5f16ab45eec6e/Frame%20427321681.png?format=auto&quality=70&f=1680x0"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://contents.mediadecathlon.com/s1067877/k$60980a550f62d137d9da84015c7b898d/Frame%20427321669.png?format=auto&quality=70&f=1680x0"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+
+    <main class="container my-4">
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://contents.mediadecathlon.com/p1987783/6326d606470ff280ab576a8a82ea1efd/p1987783.jpg?format=auto&quality=70&f=650x0"
+                            class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">T-Shirt</h5>
+                            <p class="card-text">Men Golf Polo T-Shirt 500 Black</p>
+                            <p class="card-text">Price: $50</p>
+                            <button id="Polo" onclick="loadContent(1)" class="button">PRODUCT DETAILS </button>
+                            <div id="ajax-content1"> </div>
+                            <button onclick="addToCart1('INESIS-T-Shirt', 50)" class="btn btn-primary">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://contents.mediadecathlon.com/p2239588/87998a6caefe68a15be384b54430d712/p2239588.jpg?format=auto&quality=70&f=650x0"
+                            class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title"> INESIS </h5>
+                            <p class="card-text">Men Golf Polo T-Shirt 900 Grey</p>
+                            <p class="card-text">Price: $500</p>
+                            <button id="T-Shirt" onclick="loadContent(2)" class="button">PRODUCT DETAILS </button>
+                            <div id="ajax-content2"> </div>
+                            <button onclick="addToCart2('INESIS', 500)" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://contents.mediadecathlon.com/p1985520/eb8ed3a45ad9172f8ddc862ea1c5fa48/p1985520.jpg?format=auto&quality=70&f=300x0"
+                            class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">KALENJI </h5>
+                            <p class="card-text">Men Running Shoes Run 100 - Blue</p>
+                            <p class="card-text">Price: $20</p>
+                            <button id="running" onclick="loadContent(3)" class="button">PRODUCT DETAILS </button>
+                            <div id="ajax-content3"> </div>
+                            <button onclick="addToCart3('KALENJI', 20)" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://contents.mediadecathlon.com/p1989798/5a1869364a10bf98cecc4aaeb7d76b50/p1989798.jpg?format=auto&quality=70&f=650x0"
+                            class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">FLX</h5>
+                            <p class="card-text">MEN'S CRICKET STRAIGHT FIT TROUSER CTS 500 BLACK</p>
+                            <p class="card-text">Price: $150</p>
+                            <button id="T-Shirt" onclick="loadContent(4)" class="button">PRODUCT DETAILS </button>
+                            <div id="ajax-content4"> </div>
+                            <button onclick="addToCart4('FLX', 150)" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://contents.mediadecathlon.com/p2205369/4e641e3837bdb987937408a2d2d85dab/p2205369.jpg?format=auto&quality=70&f=650x0"
+                            class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">ARTENGO </h5>
+                            <p class="card-text">Mid Sports Socks Tri-Pack RS 160 - Khaki/Khaki/Black </p>
+                            <p class="card-text">Price: $60</p>
+                            <button id="Mid" onclick="loadContent(5)" class="button">PRODUCT DETAILS </button>
+                            <div id="ajax-content5"> </div>
+                            <button onclick="addToCart5('ARTENGO', 60)" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://contents.mediadecathlon.com/p2369471/0322dc407d4f27377b2372e8fb0796be/p2369471.jpg?format=auto&quality=70&f=650x0 class="
+                            card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">SOLOGNAC</h5>
+                            <p class="card-text">Men Cotton T-Shirt Army Military Camo Print SG-100 - Woodland Grey</p>
+                            <p class="card-text">Price: $70</p>
+                            <button id="army" onclick="loadContent(6)" class="button">PRODUCT DETAILS </button>
+                            <div id="ajax-content6"></div>
+                            <button onclick="addToCart6('SOLOGNAC', 70)" class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more product cards here -->
+
+            </div>
+        </section>
+
+        <aside>
+            <h3>Cart:</h3><BR>
+            <div id="cart-items">
+                <ul id="cart-list"></ul>
+                <p>Total: <span id="total-price">$0.00</span></p>
+                <a class="btn btn-outline-success" href="done.html" role="button">PAY</a>
+            </div>
+        </aside>
+        
+    <div class="d-flex bd-highlight">
+        <div class="p-2 w-100 bd-highlight">
+            <section id="Contact">
+            <h3>Contact</h3><br>
+            <div class="d-flex justify-content-start">
+        
+                <div id="grad1">
+                    <h1 id="c1"> <u> Contact Us:</u>
+                        <p class="display-6"> <a href="https://www.instagram.com/rahulashok300/"><img src="insta.png" width="25" height="25"></a> Sport174</p>
+                        <P class="display-6"> <img src="mail.png" width="25" height="25"> Sport174@gmail.com
+                        </P>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="p-2 flex-shrink-1 bd-highlight">
+
+            <div id="rot">
+                <a href="https://forms.gle/nbKnemEMdm2eBmCP8"><img src="Feedback.png" width="250" height="250"> </a>
+                <h5> feedback</h5>
+            </div>
+        </div>
+    </div>
+</section>
+          
+        
+
+        <footer class="bg-dark text-light py-1">
+            <div class="container">
+                <p class="d-flex justify-content-center">&copy; 2024 Order Things. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Bootstrap JS and dependencies -->
+
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+
+</html>
