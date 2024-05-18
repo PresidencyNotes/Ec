@@ -8,7 +8,7 @@ header{
 }
 #grad1{
     text-align: left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Times New Roman";
     height: 200px;
     background-image: linear-gradient(white,rgb(67, 158, 239),white);
 }
