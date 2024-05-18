@@ -9,6 +9,6 @@ header{
 #grad1{
     text-align: left;
     font-family: "Times New Roman";
-    height: 200px;
+    height: 150px;
     background-image: linear-gradient(white,rgb(67, 158, 239),white);
 }
