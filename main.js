@@ -47,7 +47,7 @@
             cartList.innerHTML = '';
             cartItems.forEach((item, index) => {
                 const li = document.createElement('li');
-                li.textContent = `${item} - $${prices[index]}`;
+                li.textContent = `${item} - ₹${prices[index]}`;
                 const deleteBtn = document.createElement('button');
                 deleteBtn.textContent = 'Cancel';
                 deleteBtn.onclick = () => removeFromCart(index);
@@ -56,7 +56,7 @@
                 totalPrice += parseFloat(prices[index]);
             });
 
-            totalPriceSpan.textContent = `$${totalPrice.toFixed(2)}`;
+            totalPriceSpan.textContent = `₹${totalPrice.toFixed(2)}`;
         }
 
         var requests = [];
